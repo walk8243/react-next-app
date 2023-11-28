@@ -89,6 +89,20 @@ const Home: NextPage = () => {
 							Instantly deploy your Next.js site to a public URL with Vercel.
 						</Typography>
 					</Paper>
+
+					<Paper
+						component="a"
+						href="/chart"
+						variant="outlined"
+						className={styles.card}
+					>
+						<Typography component="h2" sx={{ fontWeight: 'bold' }}>
+							Chart &rarr;
+						</Typography>
+						<Typography component="p">
+							Use DevExtreme REACTIVE Chart.
+						</Typography>
+					</Paper>
 				</Box>
 			</main>
 
