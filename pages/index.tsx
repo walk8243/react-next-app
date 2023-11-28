@@ -1,9 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Link, Paper, Typography } from '@mui/material'
+import { Link, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import Header from '../components/common/Header'
 import Footer from '../components/common/Footer'
+import Card from '../components/home/Card'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -34,75 +35,40 @@ const Home: NextPage = () => {
 				</Typography>
 
 				<Box className={styles.grid}>
-					<Paper
-						component="a"
-						href="https://nextjs.org/docs"
-						variant="outlined"
-						className={styles.card}
+					<Card
+						url="https://nextjs.org/docs"
+						title="Documentation"
 					>
-						<Typography component="h2" sx={{ fontWeight: 'bold' }}>
-							Documentation &rarr;
-						</Typography>
-						<Typography component="p">
-							Find in-depth information about Next.js features and API.
-						</Typography>
-					</Paper>
+						Find in-depth information about Next.js features and API.
+					</Card>
 
-					<Paper
-						component="a"
-						href="https://nextjs.org/learn"
-						variant="outlined"
-						className={styles.card}
+					<Card
+						url="https://nextjs.org/learn"
+						title="Learn"
 					>
-						<Typography component="h2" sx={{ fontWeight: 'bold' }}>
-							Learn &rarr;
-						</Typography>
-						<Typography component="p">
-							Learn about Next.js in an interactive course with quizzes!
-						</Typography>
-					</Paper>
+						Learn about Next.js in an interactive course with quizzes!
+					</Card>
 
-					<Paper
-						component="a"
-						href="https://github.com/vercel/next.js/tree/master/examples"
-						variant="outlined"
-						className={styles.card}
+					<Card
+						url="https://github.com/vercel/next.js/tree/master/examples"
+						title="Examples"
 					>
-						<Typography component="h2" sx={{ fontWeight: 'bold' }}>
-							Examples &rarr;
-						</Typography>
-						<Typography component="p">
-							Discover and deploy boilerplate example Next.js projects.
-						</Typography>
-					</Paper>
+						Discover and deploy boilerplate example Next.js projects.
+					</Card>
 
-					<Paper
-						component="a"
-						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-						variant="outlined"
-						className={styles.card}
+					<Card
+						url="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+						title="Deploy"
 					>
-						<Typography component="h2" sx={{ fontWeight: 'bold' }}>
-							Deploy &rarr;
-						</Typography>
-						<Typography component="p">
-							Instantly deploy your Next.js site to a public URL with Vercel.
-						</Typography>
-					</Paper>
+						Instantly deploy your Next.js site to a public URL with Vercel.
+					</Card>
 
-					<Paper
-						component="a"
-						href="/chart"
-						variant="outlined"
-						className={styles.card}
+					<Card
+						url="/chart"
+						title="Chart"
 					>
-						<Typography component="h2" sx={{ fontWeight: 'bold' }}>
-							Chart &rarr;
-						</Typography>
-						<Typography component="p">
-							Use DevExtreme REACTIVE Chart.
-						</Typography>
-					</Paper>
+						Use DevExtreme REACTIVE Chart.
+					</Card>
 				</Box>
 			</main>
 
